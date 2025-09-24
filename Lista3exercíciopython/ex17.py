@@ -19,5 +19,5 @@ elif salario <= 0:
 
 print("Salario antes do reajuste: ",salario)
 print('Percentual do aumento: ', porcentagem)
-print('Valor do aumento: ', salario_depois-salario)
+print(f'Valor do aumento: {salario_depois-salario:.2f}')
 print('Novo valor do salario: ', salario_depois)
