@@ -1,6 +1,6 @@
 entrada = input('Insira algo: ')
 
-print('\nO tipo de entrada digitada é\n', type(entrada))
+print('\nO tipo primitivo de entrada digitada é\n', type(entrada))
 
 if entrada.isascii() == True:   
     print('É apenas da tabela ASCII: SIM')
