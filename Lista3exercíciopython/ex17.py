@@ -19,5 +19,6 @@ elif salario <= 0:
 
 print("Salario antes do reajuste: ",salario)
 print('Percentual do aumento: ', porcentagem)
+# Esse f e o restor faz com que formate para haver apenas 2 número depois da virgula
 print(f'Valor do aumento: {salario_depois-salario:.2f}')
 print('Novo valor do salario: ', salario_depois)
