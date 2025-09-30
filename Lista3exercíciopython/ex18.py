@@ -22,8 +22,9 @@ total_desconto = valor_bruto_ir + INSS
 salario_liquido = valor_bruto - (valor_bruto_ir + INSS)
 
 print('\nSalário bruto: R$', valor_bruto)
-print('Imposto de renda-', ir,'% (ou roubo): R$', valor_bruto_ir)
-print('INSS-10% (também roubo): R$', INSS,)
-print('FGTS-11%: R$', FGTS)
-print('Total do desconto: R$', total_desconto)
-print('Salário líquido: R$', salario_liquido)
+# O f é o jeito de você chamar uma variável e depois é só coloca-la em {}
+print(f'Imposto de renda-{ir}% (ou roubo): R${valor_bruto_ir:.2f}')
+print(f'INSS-10% (também roubo): R${INSS:.2f}')
+print(f'FGTS-11%: R${FGTS:.2f}')
+print(f'Total do desconto: R${total_desconto:.2f}')
+print(f'Salário líquido: R${salario_liquido:.2f}')
