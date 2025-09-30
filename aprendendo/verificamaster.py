@@ -1,0 +1,16 @@
+entrada = input('Insira algo: ')
+
+print('\nO tipo de entrada digitada é\n', type(entrada))
+
+print('É apenas da tabela ASCII:', entrada.isascii())
+print('É/São apenas número(a) ou letra(s):', entrada.isalnum())
+print('É/São apenas número(s):', entrada.isnumeric())
+print('É/São apenas letra(s):', entrada.isalpha())
+print('É/São apenas decimal(s):', entrada.isdecimal())
+print('É/São apenas dígito(s):', entrada.isdigit())
+print('Pode ser usado para variável(s)/funções:', entrada.isidentifier())
+print('É/São apenas minúsculo(s):', entrada.islower())
+print('Pode ser(em) exibido(s)/printado(s) na tela:', entrada.isprintable())
+print('É/São espaço(s) em branco:', entrada.isspace())
+print('Todas as palavras começam com a letras maiúscula e o resto minúscula:', entrada.istitle())
+print('É/São apenas letra(s) maiúscula(s):', entrada.isupper())
