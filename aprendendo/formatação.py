@@ -90,7 +90,10 @@ print(lista_frase2)
 # e agora não está mais
 print('-'.join(lista_frase2))
 
-print("""Esse é um teste auto explicativo, basicamente em vez de 
-você fazer vários prints você irá escrever um escrotamente fácil
-dessa maneira e só ir apertando ENTER para ir para a próxima 
-linha como um editor de texto normal.""")
+print("""\n\nEsse é um teste auto explicativo, basicamente em vez 
+de você fazer vários prints você irá escrever um escrotamente fácil
+dessa maneira e só ir apertando ENTER para ir para a próxima linha 
+como um editor de texto normal.""")
+
+# Essa função não só coloca todas as letras em maiúsculo 
+print(frase2.upper().count('A'))
