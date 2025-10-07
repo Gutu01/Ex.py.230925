@@ -1,4 +1,6 @@
-frase = 'A vaca não sabe nadar'
+# Da parte e nem voar em diante foi adicionado posteriormente
+
+frase = 'A Vaca Não Sabe Nadar e Nem Voar'
 
 # Mostra a letra "v", pois o frase[2] vê a posição na memória onde está
 print(frase[2])
@@ -45,3 +47,45 @@ print('Quantas vezes aparece a palavra "guaraná":', frase.find('guaraná'))
 
 # Verifica se uma palavra está em uma frase
 print('Existe a palavra "vaca" na frase:','vaca' in frase)
+
+# Essa função é de transformação. Ele transformaa palavra "não" em um 
+# espaço vazio. O replace não substitui na string, mas sim de uma forma
+# secundária 
+print(frase.replace('não',''))
+
+# Essa função faz toda frase ficar em letras maiúscula
+print(frase.upper())
+
+# Essa função deixa todas as letras minúsculas
+print(frase.lower())
+
+# Essa função joga todas as letras para minúsculo e depois deixa só a 
+# primeira maiúscula
+print(frase.capitalize())
+
+# Essa função joga todas as letras para minúsculo e depois deixa a primeira
+# letra de todas as palavras em maiúsculo
+print(frase.title())
+
+frase2 = '   A Vaca Aprendeu a Nadar   ' 
+
+print('\n', frase2)
+
+# Essa função remove todos os espaços desnecessários no começo e no final
+# da string
+print(frase2.strip())
+
+# Essa função só remove os últimos espaços desnecessários
+print(frase2.rstrip())
+
+# Essa função só remove os primeiros espaços desnecessários
+print(frase2.lstrip())
+
+# Essa função divide a string de acordo com cada palavra que tem, formando
+# uma lista
+lista_frase2 = frase2.split()
+print(lista_frase2)
+
+# Essa função coloca um "-" juntando a lista_frase2 que antes estava dividida
+# e agora não está mais
+print('-'.join(lista_frase2))
