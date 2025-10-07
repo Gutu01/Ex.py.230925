@@ -10,4 +10,38 @@ print(frase[2:5])
 print(frase[2:6])
 # Agora sim está certo   
 
-print(frase[2:20])
+print(frase[2:21])
+# Agora eu "fatiei" até o final, porém o arrey selecionado não existe
+# e essa não é a melhor maneira de você fatiar até a parte final
+
+print(frase[2:21:2])
+# Agora ele está fazendo a mesma coisa do anterior, mas agora pulando
+# de dois em dois
+
+# Quando eu não coloco onde ele vai começar, ele começa do cactere 0
+print(frase[:6])
+
+print(frase[11:])
+# Agora é o jeito certo de ir até o final sem ficar citando uma posição
+# do array que nem existe
+
+print(frase[11::3])
+# Agora ele começa no 11, vai até o final e pula de 3 em 3
+
+# Essa função faz mostrar quantas caracteres tem no array
+print('Quantidade de caracteres: ',len(frase))
+
+# Essa função conta quantas letras "a" tem na frase
+print('Quantidade de letas "a":',frase.count('a'))
+
+# Aqui ele vai contar quantas letras a tem entre a posição 0 e 5 do array
+print('Quantidades de letras "a" entre 0 e 5:', frase.count('a',0,5))
+
+# Ele procura e mostra onde começa a palavra "não"
+print('Onde começa a palavra "não":', frase.find('não'))
+
+# Se o find não achar a palavra ele retorna -1
+print('Quantas vezes aparece a palavra "guaraná":', frase.find('guaraná'))
+
+# Verifica se uma palavra está em uma frase
+print('Existe a palavra "vaca" na frase:','vaca' in frase)
