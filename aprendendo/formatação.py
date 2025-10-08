@@ -52,6 +52,8 @@ print('Existe a palavra "vaca" na frase:','vaca' in frase)
 # espaço vazio. O replace não substitui na string, mas sim de uma forma
 # secundária 
 print(frase.replace('não',''))
+# Essa função não altera a string pois ela é imutável. Porém, é possível
+# salva-la colocando em uma variável
 
 # Essa função faz toda frase ficar em letras maiúscula
 print(frase.upper())
@@ -95,5 +97,10 @@ de você fazer vários prints você irá escrever um escrotamente fácil
 dessa maneira e só ir apertando ENTER para ir para a próxima linha 
 como um editor de texto normal.""")
 
-# Essa função não só coloca todas as letras em maiúsculo 
+# Essa função não só coloca todas as letras em maiúsculo como também 
+# procura quantas letras "A" tem na frase
 print(frase2.upper().count('A'))
+
+# O strip remove os espaços desnecessários e o len conta quantos 
+# caracteres tem na string
+print(len(frase2.strip()))
