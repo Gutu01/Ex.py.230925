@@ -104,3 +104,13 @@ print(frase2.upper().count('A'))
 # O strip remove os espaços desnecessários e o len conta quantos 
 # caracteres tem na string
 print(len(frase2.strip()))
+
+# O lower transforma todas as caracteres em minúsculo e o finde procura
+# em que local da string o sabe está
+print(frase2.lower().find('aprendeu'))
+
+# Enquanto o split divide a string em uma lista, o dividido[2] vai no
+# segundo item da lista (que começa por 0) e que a letra 1 dele (que
+# também começa com 0)
+dividido = frase2.split()
+print(dividido[2][1])
