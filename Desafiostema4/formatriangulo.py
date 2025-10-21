@@ -8,4 +8,3 @@ if reta1 + reta2 > reta3:
     print('As retas formam um triângulo!\n')
 else:
     print('As retas não formam um triângulo!\n')
-    
