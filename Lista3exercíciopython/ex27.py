@@ -1,11 +1,19 @@
-for i in range(3):
-    matricula[i] = int(input('Digite o número da matrícula: '))
-    
-    while True:
-        sexo[i] = int(input('Digite 1 para Masculino ou 2 para feminino: '))
+total_alunos = 3
+matricula = []
+sexo = []
 
-        if sexo[i] != 1 and sexo[i] != 2:
-            print('\nSexo Inválido!\n')
-        if sexo[i] == 1 or sexo[i] == 2:
-            break
+for i in range(1,total_alunos):
+    print(f'{i}º auno\n')
+    matricula[i] = int(input('Digite sua matricula: '))
+    print('Digite')
+    print('1-Masculino')
+    print('2-Feminino')
+    sexo[i] = int(input('Resposta: '))
+    
+    while sexo[i] > 2 or sexo[i] < 1:
+        print('\nSexo inválido!\n')
+        print('Digite')
+        print('1-Masculino')
+        print('2-Feminino')
+        sexo[i] = int(input('Resposta: '))
     
