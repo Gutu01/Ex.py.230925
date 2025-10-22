@@ -1,0 +1,17 @@
+print('--='*6)
+print('Caixa registradora')
+print('--='*6)
+print('Valor mínimo 10')
+print('Valor máximo 600')
+print('--='*6)
+notas = int(input('\nDigite o valor de nota:'))
+
+while notas > 600 or notas < 10:
+    print('Número de notas inválido1\n')
+    print('--='*6)
+    print('Caixa registradora')
+    print('--='*6)
+    print('Valor mínimo 10')
+    print('Valor máximo 600')
+    print('--='*6)
+    notas = int(input('\nDigite o valor de nota:')) 
