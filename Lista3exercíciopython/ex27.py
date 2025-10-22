@@ -2,8 +2,9 @@ total_alunos = 3
 matricula = []
 sexo = []
 
-for i in range(1,total_alunos):
-    print(f'{i}º auno\n')
+for i in range(total_alunos):
+
+    print(f'\n{i+1}º auno\n')
 
     matricula.append(int(input('Digite sua matricula: ')))
     
@@ -18,5 +19,7 @@ for i in range(1,total_alunos):
         print('Digite')
         print('1-Masculino')
         print('2-Feminino')
-        sexo.append(int(input('Resposta: '))) 
+        sexo[i] = int(input('Resposta: '))
+        
+print(matricula,sexo)
     
