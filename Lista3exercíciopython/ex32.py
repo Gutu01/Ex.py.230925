@@ -16,7 +16,7 @@ while notas > 600 or notas < 10:
     print('--='*6)
     notas = int(input('\nDigite o valor de nota:')) 
 
-while notas >= 100:
+
     notas_de_100 = notas/100
     notas = notas - 100 * notas_de_100
 
