@@ -41,4 +41,3 @@ if notas >= 5:
 if notas >= 1:
     print(f'Notas de R$1: {notas}')
 
-
