@@ -19,3 +19,5 @@ elif resposta == 3:
 elif resposta == 4:
     preco = (preco + preco*10/100)/3
     print(f'O preço total fica 3X de R${preco:.2f}')
+else:
+    print('ERROR')
