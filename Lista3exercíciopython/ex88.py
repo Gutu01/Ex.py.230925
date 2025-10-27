@@ -28,3 +28,5 @@ zeroum_real = int(input('Digite a quantidade de moedas de R$0,01: '))
 
 total = um_real + cinquenta_real*0.5 + vinteecinco_real*0.25 + dez_real*0.10 + cinco_real*0.05 + zeroum_real*0.01
 
+if resposta >= preco:
+    
