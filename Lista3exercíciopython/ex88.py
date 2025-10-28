@@ -41,10 +41,24 @@ if total >= preco:
 troco = total - preco
 
 # O // faz dividir sem casas decimais
-# 
+# O round arredonda a conta na divisão para não ficar uma disima. O , 2 depois de troco%1 faz ficar até 2 casas depois da vírgula
+
 troco_um = int(troco//1)
 troco = round(troco%1, 2)
 
-    
-    
-    print(f'O troco é { }')
+troco_cinquenta = int(troco//0.5)
+troco = round(troco%0.5, 2)
+
+troco_vinteecinto = int(troco//0.25)
+troco = round(troco%0.25, 2)
+
+troco_dez = int(troco//0.1)
+troco = round(troco%0.1, 2)
+
+troco_cinco = int(troco//0.05)
+troco = round(troco%0.05, 2)
+
+troco_umcentavo = int(troco//0.01)
+troco = round(troco%0.01, 2)
+
+print(f'')
