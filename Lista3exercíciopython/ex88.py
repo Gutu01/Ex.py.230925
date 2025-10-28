@@ -1,3 +1,10 @@
+troco_um = 0
+troco_cinquenta = 0
+troco_vinteecinto = 0
+troco_dez = 0
+troco_cinco = 0
+troco_umcentavo = 0
+
 print('--='*10)
 print(' '*9,'Cafeteira')
 print('--='*10)
@@ -28,5 +35,20 @@ zeroum_real = int(input('Digite a quantidade de moedas de R$0,01: '))
 
 total = um_real + cinquenta_real*0.5 + vinteecinco_real*0.25 + dez_real*0.10 + cinco_real*0.05 + zeroum_real*0.01
 
-if resposta >= preco:
-    
+troco = total - preco
+
+if troco / 1:
+    troco_um = troco/1
+if troco-troco_um / 0.5:
+    troco_cinquenta = troco%1/0.5
+if troco-troco_um-troco_cinquenta / 0.25:
+    troco_vinteecinto = troco%1.5/0.25
+if troco / 0.1:
+    troco_dez = troco%1.75/0.1
+if 
+
+
+
+if total >= preco:
+    print('Produto comprado com sucesso!')
+    print(f'O troco é { }')
