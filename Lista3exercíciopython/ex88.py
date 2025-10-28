@@ -1,6 +1,8 @@
+preco = 0
+
 troco_um = 0
 troco_cinquenta = 0
-troco_vinteecinto = 0
+troco_vinteecico = 0
 troco_dez = 0
 troco_cinco = 0
 troco_umcentavo = 0
@@ -24,7 +26,7 @@ elif resposta == 3:
 elif resposta == 4:
     preco = 2.36
 else:
-    print('Valor inválido!')
+    exit('nValor inválido\n')
 
 um_real = int(input('\nDigite a quantidade de moedas de R$1,00: '))
 cinquenta_real = int(input('Digite a quantidade de moedas de R$0,50: '))
@@ -37,19 +39,21 @@ total = um_real + cinquenta_real*0.5 + vinteecinco_real*0.25 + dez_real*0.10 + c
 
 if total >= preco:
     print('Produto comprado com sucesso!')
+else:
+    print('Valor inválido!')
+    exit()
 
 troco = total - preco
 
 # O // faz dividir sem casas decimais
 # O round arredonda a conta na divisão para não ficar uma disima. O , 2 depois de troco%1 faz ficar até 2 casas depois da vírgula
-
 troco_um = int(troco//1)
 troco = round(troco%1, 2)
 
 troco_cinquenta = int(troco//0.5)
 troco = round(troco%0.5, 2)
 
-troco_vinteecinto = int(troco//0.25)
+troco_vinteecinco = int(troco//0.25)
 troco = round(troco%0.25, 2)
 
 troco_dez = int(troco//0.1)
@@ -61,4 +65,9 @@ troco = round(troco%0.05, 2)
 troco_umcentavo = int(troco//0.01)
 troco = round(troco%0.01, 2)
 
-print(f'')
+print(f'Moedas de R$1,00: {troco_um}')
+print(f'Moedas de R$0,50: {troco_cinquenta}')
+print(f'Moedas de R$0,25: {troco_vinteecinco}')
+print(f'Moedas de R$0,10: {troco_dez}')
+print(f'Moedas de R$0,05: {troco_cinco}')
+print(f'Moedas de R$0,01: {troco_umcentavo}')
