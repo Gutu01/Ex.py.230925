@@ -20,6 +20,8 @@ variavel /= 2
 
 print(variavel)
 
+# O simbolo % se chama módulo dentro da programação
+
 variavel %= 2
 
 print(variavel)
