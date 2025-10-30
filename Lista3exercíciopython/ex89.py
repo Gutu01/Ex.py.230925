@@ -4,4 +4,4 @@ total = 37.47
 gasto = gasto - 5
 
 if gasto <= 5:
-    
+     
