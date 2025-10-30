@@ -23,5 +23,3 @@ print(lista)
 lista.sort()
 print(lista)
 
-for i in range(1, variavel):
-    print(i)
