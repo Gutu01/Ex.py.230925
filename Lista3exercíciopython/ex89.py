@@ -7,32 +7,30 @@ custo = [1.16, 6.46, 6.49, 6.55, 11.08]
 
 if gasto > 0:
     if gasto > 5:
-        total += custo[0]
+        total += 5*custo[0]
     else:
         total *= gasto
         gasto -= gasto
 if gasto > 0:
     if gasto > 5:
-        total += custo[1]
+        total += 5*custo[1]
     else:
         total *= gasto
         gasto -= gasto
 if gasto > 0:
     if gasto > 5:
-        total += custo[2]
+        total += 5*custo[2]
     else:
         total *= gasto
         gasto -= gasto
 if gasto > 0:
     if gasto > 5:
-        total += custo[3]
+        total += 5*custo[3]
     else:
         total *= gasto
         gasto -= gasto
 if gasto > 0:
-    if gasto > 5:
-        total += custo[4]
-    else:
-        total *= gasto
-        gasto -= gasto
+        total += 5*custo[4]
 
+print(f'Total: R${total:.2f}')
+print(f'Água: R${total*80/100:.2f}')
