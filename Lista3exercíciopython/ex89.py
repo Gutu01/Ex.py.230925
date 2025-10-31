@@ -1,12 +1,8 @@
 gasto = float(input('Digite o valor de m³ de água gasto: '))
 
 total = 37.47
-gasto = gasto - 5
+gasto = gasto - 5     
 
-<<<<<<< HEAD
-if gasto <= 5:
-     
-=======
 custo = [1.16, 6.46, 6.49, 6.55, 11.08]
 
 if gasto > 0:
@@ -39,4 +35,4 @@ if gasto > 0:
     else:
         total *= gasto
         gasto -= gasto
->>>>>>> 8f3103beec502262d2e5b6fc6980b22464f8e46c
+
