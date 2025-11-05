@@ -7,3 +7,7 @@ print(lanche[1])
 print(lanche[-1])
 print(lanche[-3:])
 print(lanche[-1:-4-1:-1])
+
+
+for comida, pos in enumerate(lanche):
+    print(f'Eu vou comer {comida} na posição {pos}')
