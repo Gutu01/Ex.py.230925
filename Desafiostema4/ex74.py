@@ -1,3 +1,4 @@
 from random import randint
 
-teste = randint
+teste = randint(0,10)
+
