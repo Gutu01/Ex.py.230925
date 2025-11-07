@@ -1,4 +1,7 @@
-lista = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onde', 'doze', 'treze', 'quatorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
+lista = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco',
+        'seis', 'sete', 'oito', 'nove', 'dez', 'onde',
+        'doze', 'treze', 'quatorze', 'quinze', 'dezesseis',
+        'dezessete', 'dezoito', 'dezenove', 'vinte')
 
 numero = int(input('Digite um número inteiro entre 0 e 20: '))
 
