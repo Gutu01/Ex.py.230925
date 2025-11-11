@@ -27,5 +27,3 @@ for i in range(15):
             print('Questão certa')
         case False:
             print('Questão errada!')
-        case _:
-            print('Resposta inválida!')
