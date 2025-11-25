@@ -5,8 +5,7 @@ indice_menor = []
 for i in range(5):
     lista.append(float(input('Digite um valor: ')))
     if i == 0:
-        maior = lista[i]
-        menor = lista[i]
+        maior = menor = lista[i]
 
     if lista[i] >= maior:
         maior = lista[i]
