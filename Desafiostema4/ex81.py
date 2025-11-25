@@ -7,9 +7,12 @@ while numero:
     lista.append(numero)
 
 print(f'Foram digitados {len(lista)} números')
+
 lista.sort(reverse = True)
 lista.remove(0)
+
 print(f'Lista decrescente{lista}')
+
 if 5 in lista:
     print('Existe o número 5 na lista!')
 else:
