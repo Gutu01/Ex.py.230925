@@ -48,7 +48,7 @@ print('Quantas vezes aparece a palavra "guaraná":', frase.find('guaraná'))
 # Verifica se uma palavra está em uma frase
 print('Existe a palavra "vaca" na frase:','vaca' in frase)
 
-# Essa função é de transformação. Ele transformaa palavra "não" em um 
+# Essa função é de transformação. Ela transforma palavra "não" em um 
 # espaço vazio. O replace não substitui na string, mas sim de uma forma
 # secundária 
 print(frase.replace('não',''))
