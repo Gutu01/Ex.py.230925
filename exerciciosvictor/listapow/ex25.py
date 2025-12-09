@@ -10,7 +10,7 @@ for i in range(quantidade):
     total += preco
 
     produtos[produto] = preco
-    print(produtos)
+    
     if i == 0:
         maior_preco = preco
         menor_preco = preco
