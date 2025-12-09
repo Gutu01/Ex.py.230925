@@ -18,4 +18,15 @@ elif resposta == 2:
         print(f'Sua compra ficará R${valor:.2f} em {vezes}x de {parcela:.2f}')   
     else:
         print('Parcela inválida!') 
-    
+
+elif resposta == 3:
+    vezes = int(input('Digite a quantidade de parcelas: '))
+
+    if vezes == 1:
+        print(f'Sua compra ficará R${valor:.2f}')
+    elif vezes >= 2 and vezes <=12:
+        valor = valor + valor*2/100
+        parcela = valor/vezes
+        print(f'Sua compra ficará R${valor:.2f} em {vezes}x de {parcela:.2f}')   
+    else:
+        print('Parcela inválida!') 
