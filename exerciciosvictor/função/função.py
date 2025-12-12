@@ -6,7 +6,20 @@ def notas():
     notas = []
 
     for i in range(quantidade):
-        notas.append(float(input(f'Digite a {i+1}º nota: ')))
+        while True:
+            try:
+
+                nota = float(input(f'Digite a {i+1}º nota: '))
+                
+                
+                if nota< 0 or nota > 10:
+                    print('Valor inválido')
+                else:
+                    notas.append(nota)
+                    break
+
+            except ValueError:
+                print('Nota inválida!')
 
     return notas
 
