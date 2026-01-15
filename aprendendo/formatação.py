@@ -95,5 +95,5 @@ de você fazer vários prints você irá escrever um escrotamente fácil
 dessa maneira e só ir apertando ENTER para ir para a próxima linha 
 como um editor de texto normal.""")
 
-# Essa função não só coloca todas as letras em maiúsculo 
+# Essa função não só coloca todas as letras em maiúsculo como também conta quantos A maiúsculo tem na frase
 print(frase2.upper().count('A')) 
