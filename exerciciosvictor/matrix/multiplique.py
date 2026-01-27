@@ -26,6 +26,7 @@ D = [
 
 X = []
 Y = []
+Z = []
 
 for p in range(len(A)):
     L = []
@@ -45,8 +46,13 @@ for p in range(len(C)):
         M.append(soma)    
     Y.append(M)
 
-print(f'{X[0]}\n{X[1]}')
+print(f'Multiplicação:\n\n{X[0]}\n{X[1]}')
 print(f'\n{Y[0]}\n{Y[1]}')
 
 for p in range(len(X)):
-    
+    l = []
+    for i in range(len(X)):
+        l.append(X[p][i] + Y[p][i])
+    Z.append(l)
+
+print(f'\nAdição:\n{Z[0]}\n{Z[1]}')
