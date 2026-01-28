@@ -21,4 +21,4 @@ for i in range(len(A)):
     multiplicacao.append(l)
 
 for i in range(2):
-    print(f'{multiplicacao[i]}')
+    print(f'{multiplicacao[i]}')      
