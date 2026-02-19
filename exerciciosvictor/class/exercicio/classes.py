@@ -16,3 +16,11 @@ class ContaBancario:
 
     def sacar(self, sacar):
         self.saldo -= sacar
+
+class Produto:
+    def __init__(self, nome, preco):
+        self.nome = nome
+        self.preco = preco
+
+    def aplicar_desconto(self, percentual):
+        return self.preco-self.preco*percentual/100
