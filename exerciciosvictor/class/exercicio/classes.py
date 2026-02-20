@@ -24,3 +24,11 @@ class Produto:
 
     def aplicar_desconto(self, percentual):
         return self.preco-self.preco*percentual/100
+    
+class Retangulo:
+    def __init__(self, largura, altura):
+        self.largura = largura
+        self.altura = altura
+
+    def area(self):
+        return self.largura*self.altura
