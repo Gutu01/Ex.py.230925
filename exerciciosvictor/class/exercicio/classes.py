@@ -32,3 +32,16 @@ class Retangulo:
 
     def area(self):
         return self.largura*self.altura
+    
+class Carro:
+    def __init__(self, modelo, velocidade):
+        self.modelo = modelo
+        self.velocidade = 0
+
+    def acelerar(self, valor):
+        self.velocidade += valor
+        return self.velocidade + valor
+    
+    def freiar(self, valor):
+        self.velocidade += valor
+        return self.velocidade - valor
