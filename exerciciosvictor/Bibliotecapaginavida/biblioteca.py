@@ -1,18 +1,24 @@
 class Biblioteca:
-    def __init__(self, livro):
-        self._livro = livro
-        self._emprestado = False
+    def __init__(self,nome):
+        self._nome = nome
+        self.disponivel = True
 
-    @property
-    def get_emprestimo(self):
-        return self._emprestado
+    def emprestar(self):
+        if self.disponivel:
+            self.disponivel = False
+            print(f'{self._nome} foi emprestado com sucesso!')
+        else:
+            print(f'{self._nome} não está disponível para emprestimo!')
+    
+    def devolver(self):
+        if self.disponivel:
+            print(f'{self._nome} não foi emprestado!')
+        else:
+            self.disponivel = True
+            print(f'{self._nome} foi devolvido com sucesso!')
 
-    @get_emprestimo.setter
-    def set_emprestimo(self):
-        self._emprestado = True
-        print('O livro foi emprestado!')
-
-    @get_emprestimo.setter
-    def set_devolucao(self):
-        self._emprestado = False
-        print('O liro foi devolvido!')
+    def status(self):
+        if self.disponivel:
+            print('O livro está disponível.')
+        else:
+            print('O livro está indisponível.')
