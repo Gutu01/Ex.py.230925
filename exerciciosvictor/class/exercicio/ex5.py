@@ -1,14 +1,8 @@
 from classes import Carro
 
 modelo = input('Digite o modelo do carro: ')
-
-carrotop = Carro(modelo)
+carro1 = Carro(modelo)
 
 for i in range(3):
-    acelerar = float(input('Digite o valor da aceleração: '))
-
-    carrotop.acelerar(acelerar)
-
-    freiar = float(input('Digite o valor do freio: '))
-
-    carrotop.freiar(freiar)
+    carro1.acelerar()
+    carro1.freiar()
