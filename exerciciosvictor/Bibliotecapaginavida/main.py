@@ -16,6 +16,7 @@ while True:
         if resposta < 0 or resposta > 5:
             print('\nOpção inválida!\n')
             continue
+        
 #   O continue pula todo código que tem no loop e volta pro início
 
     except ValueError:
@@ -36,7 +37,11 @@ while True:
             print()
             
         case 3:
+            pesquisa = input('\nDigite o nome do livro: ')
 
+            if pesquisa in livros:
+
+        
         
 
         
